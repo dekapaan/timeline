@@ -67,7 +67,7 @@ body {
 }
 .timeline-item {
   background: rgba(39, 39, 39, 0.2);
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 7px;
