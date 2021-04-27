@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,22 +6,34 @@
 }
 .landing {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.897);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/chris-lee-3DNj0I4rsAE-unsplash.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
   display: grid;
   place-items: center;
 }
+
+h1 {
+  font-size: 3rem;
+}
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
 }
 .timeline-container {
   display: grid;
   grid-template-columns: 1fr 10% 1fr;
   grid-template-rows: repeat(4, 1fr);
-  background-image: url(https://picsum.photos/1200);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(17, 17, 17),
+    rgb(0, 0, 0)
+  );
   align-items: center;
   justify-items: center;
   padding: 10%;
@@ -56,15 +69,14 @@ body {
   grid-row: 4;
 }
 .timeline-item {
-  background: rgba(0, 0, 0, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+  background: rgba(39, 39, 39, 0.2);
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border-radius: 4px;
+  border-radius: 7px;
   border: none;
   padding: 10%;
   color: white;
-  text-shadow: 3px 3px 3px black;
 }
 
 @media screen and (max-width: 800px) {
